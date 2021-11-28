@@ -1,2 +1,3 @@
 # php-mvc
-Belajar php mvc
+
+Sebuah backbone mvc project
