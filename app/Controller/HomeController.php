@@ -2,11 +2,18 @@
 
 namespace AlfianKhusnul\PHP\MVC\Controller;
 
+use AlfianKhusnul\PHP\MVC\App\View;
+
 class HomeController
 {
     function index() : void
     {
-        echo "HomeController.index()";
+        $model = [
+            'title' => 'PHP MVC',
+            'content' => 'Anda sedang menggunakan PHP MVC dari Alfian Khusnul Amar'
+        ];
+
+        View::render('Home/index', $model);
     }
 
     function hello() : void
